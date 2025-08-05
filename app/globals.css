@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-primary: var(--font-dmSans);
+  --font-secondary: var(--font-barlow);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1200px;
+  --box-shadow-custom: var(--box-shadow);
+  --background-image-hero: url('/assets/img/hero/bg.jpg');
+  --color-primary: #1a1a1a;
+  --color-sencodary: #6b7280;
+  --color-accent: #cc0000;
+  --color-blood-light: #cc0000;
+  --color-blood-dark: #cc0000;
+  --color-heart: #cc0000;
+
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #1a1a1a;
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: #6b7280;
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: #cc0000;
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e5e7eb;
+  --input: oklch(0.922 0 0);
+  --ring: #cc0000;
+  --chart-1: #cc0000; 
+  --chart-2: #cc0000; 
+  --chart-3: #cc0000; 
+  --chart-4: #cc0000; 
+  --chart-5: #cc0000; 
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #cc0000;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: #cc0000;
+  --box-shadow: 0px 4px 54px 10px rgba(204, 0, 0, 0.08);
+  
+  --blood-primary: #cc0000;
+  --blood-secondary: #cc0000;
+  --blood-tertiary: #cc0000;
+  --heart-color: #cc0000;
+  --donation-success: #cc0000;
+  --donation-warning: #cc0000;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: #cc0000;
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: #cc0000;
+  --chart-1: #cc0000;
+  --chart-2: #cc0000;
+  --chart-3: #cc0000;
+  --chart-4: #cc0000;
+  --chart-5: #cc0000;
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: #cc0000;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: #cc0000;
+  --blood-primary: #cc0000;
+  --blood-secondary: #cc0000;
+  --blood-tertiary: #cc0000;
+  --heart-color: #cc0000;
+  --donation-success: #cc0000;
+  --donation-warning: #cc0000;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply font-secondary text-secondary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-primary text-primary;
+  }
+
+  .h1 {
+    @apply text-[40px] xl:text-[54px] uppercase font-black leading-[1.1];
+  }
+
+  .h2 {
+    @apply text-[36px] xl:text-[46px] capitalize font-bold xl:leading-[56px] leading-[1.3];
+  }
+
+  .h3 {
+    @apply font-primary font-bold text-3xl;
+  }
+
+  .h4 {
+    @apply text-2xl font-semibold;
+  }
+
+  .text-blood {
+    color: var(--blood-primary);
+  }
+  
+  .text-blood-light {
+    color: var(--blood-secondary);
+  }
+  
+  .text-blood-dark {
+    color: var(--blood-tertiary);
+  }
+  
+  .text-heart {
+    color: var(--heart-color);
+  }
+  
+  .bg-blood {
+    background-color: var(--blood-primary);
+  }
+  
+  .bg-blood-light {
+    background-color: var(--blood-secondary);
+  }
+  
+  .bg-blood-gradient {
+    background: linear-gradient(135deg, #cc0000, #cc0000);
+  }
+  
+  .border-blood {
+    border-color: #cc0000;
+  }
+  
+  .hover\:bg-blood-hover:hover {
+    background-color: #cc0000;
+  }
+  
+  .donation-success {
+    color: #cc0000;
+  }
+  
+  .donation-warning {
+    color: #cc0000;
+  }
+}
