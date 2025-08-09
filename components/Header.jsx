@@ -62,7 +62,7 @@ const Header = () => {
 
             {/* Register as Donor Button with External Link */}
             <a
-              href="https://ivr-caller-system.onrender.com/"  
+              href="https://ivr-caller-system.onrender.com/register"  
               target="_blank"                      
               rel="noopener noreferrer"            
             >
