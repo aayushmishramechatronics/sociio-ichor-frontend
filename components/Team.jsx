@@ -7,35 +7,35 @@ const teamMembers = [
     name: "Dilshaad Uzair",
     position: "Founding Member",
     image: "/assets/img/team/dilshaad.jpg", 
-    linkedinUrl: "https://linkedin.com/in/johndoe"
+    linkedinUrl: "https://www.linkedin.com/in/mohammed-dilshaad-uzair-b8114717b/"
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "Prateek Shewkani",
     position: "Founding Member",
     image: "/assets/img/team/prateek.jpg",
-    linkedinUrl: "https://linkedin.com/in/janesmith"
+    linkedinUrl: "https://www.linkedin.com/in/pratik-shewkani/"
   },
   {
     id: 3,
     name: "Insha Manowar",
     position: "Founding Member",
     image: "/assets/img/team/insha.jpg",
-    linkedinUrl: "https://linkedin.com/in/mikejohnson"
+    linkedinUrl: "https://linkedin.com/in/insha-manowar/"
   },
   {
     id: 4,
     name: "Amulya Kollipara",
     position: "Founding Member",
     image: "/assets/img/team/amulya.jpg",
-    linkedinUrl: "https://linkedin.com/in/sarahwilson"
+    linkedinUrl: "https://www.linkedin.com/in/amulya-kollipara/"
   },
   {
     id: 5,
     name: "Manorath Khanna",
     position: "Founding Member",
     image: "/assets/img/team/manorath.jpg",
-    linkedinUrl: "https://linkedin.com/in/sarahwilson"
+    linkedinUrl: "https://linkedin.com/in/manorath-khanna/"
   }
 ];
 
